@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Girlie Project 数字友谊博物馆 — 收集、守护全球女孩的友谊故事">
+  <title>Girlie Project · 数字友谊博物馆</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/museum.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav">
+    <div class="nav-brand" onclick="App.navigate('home')">
+      <span class="dot"></span>
+      Girlie Project
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" data-page="home" onclick="App.navigate('home')">Home</a>
+      <a class="nav-link" data-page="archive" onclick="App.navigate('archive')">Story Archive</a>
+      <a class="nav-link" data-page="atlas" onclick="App.navigate('atlas')">Friendship Atlas</a>
+    </div>
+  </nav>
+
+  <!-- ===== Home Page ===== -->
+  <div id="page-home" class="page active">
+    <section class="hero">
+      <div class="hero-eyebrow">Digital Friendship Museum</div>
+      <h1 class="hero-title">让全球女孩的<br><em>友谊故事</em>有一个家</h1>
+      <p class="hero-subtitle">
+        我们研究、记录并守护女性友谊。<br>
+        每一个女孩的故事,都是一座微型博物馆。
+      </p>
+      <div class="hero-divider"></div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">7</div>
+          <div class="hero-stat-label">Stories</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">2</div>
+          <div class="hero-stat-label">Countries</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">100</div>
+          <div class="hero-stat-label">Goal</div>
+        </div>
+      </div>
+      <div class="hero-scroll">Scroll</div>
+    </section>
+
+    <!-- Modules -->
+    <section class="home-section">
+      <div class="home-section-header reveal">
+        <div class="home-section-eyebrow">Two Halls</div>
+        <h2 class="home-section-title">走进博物馆</h2>
+        <p class="home-section-desc">两个展厅,一种信念:友谊值得被认真对待,回忆值得被好好保存。</p>
+      </div>
+      <div class="module-grid">
+        <div class="module-card reveal" onclick="App.navigate('archive')">
+          <div class="module-card-number">I</div>
+          <h3 class="module-card-title">Story Archive</h3>
+          <p class="module-card-desc">每个女孩一个页面。她的城市,她的梦想,她最好的朋友,她想对世界女孩说的话。安静地陈列,像博物馆里的展品。</p>
+          <div class="module-card-arrow">
+            <span class="arrow-line"></span>
+            Enter
+          </div>
+        </div>
+        <div class="module-card reveal" onclick="App.navigate('atlas')">
+          <div class="module-card-number">II</div>
+          <h3 class="module-card-title">Friendship Atlas</h3>
+          <p class="module-card-desc">一张世界地图,每个标记都是一个真实的友谊故事。点击国家,遇见那片土地上的女孩。随着采访扩展,地图会形成网络。</p>
+          <div class="module-card-arrow">
+            <span class="arrow-line"></span>
+            Explore
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insights -->
+    <section class="home-section" style="background: var(--color-bg-warm);">
+      <div class="home-section-header reveal">
+        <div class="home-section-eyebrow">N=7 Research</div>
+        <h2 class="home-section-title">我们听到了什么</h2>
+        <p class="home-section-desc">第一批访谈的核心发现。这些不是数据点,是七个女孩告诉我们的真相。</p>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card reveal">
+          <div class="insight-number">01</div>
+          <p class="insight-text">友谊 > 爱情。<br>真正贯穿人生的,是朋友。</p>
+        </div>
+        <div class="insight-card reveal">
+          <div class="insight-number">02</div>
+          <p class="insight-text">朋友即家人。<br>友谊正在承担传统家庭功能。</p>
+        </div>
+        <div class="insight-card reveal">
+          <div class="insight-number">03</div>
+          <p class="insight-text">回忆是情绪的载体。<br>照片不是记录事件,是保存情绪。</p>
+        </div>
+        <div class="insight-card reveal">
+          <div class="insight-number">04</div>
+          <p class="insight-text">最怕无声走散。<br>不是吵架,是慢慢地不在了。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="home-section">
+      <div class="home-section-header reveal">
+        <div class="home-section-eyebrow">Our Mission</div>
+        <h2 class="home-section-title">为什么是博物馆</h2>
+      </div>
+      <div class="container-narrow reveal" style="text-align: center;">
+        <p style="font-family: var(--font-display); font-size: 1.3rem; font-style: italic; font-weight: 300; line-height: 2; color: var(--color-ink-soft);">
+          "如果有一个地方,能把我和朋友这些年的东西——不只是照片和文字,而是那种感觉——都存下来,我会很安心。像一座只属于我们的博物馆。"
+        </p>
+        <p style="font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-ink-faint); margin-top: var(--space-md);">
+          — 阿May, 吉隆坡
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== Story Archive Page ===== -->
+  <div id="page-archive" class="page">
+    <div class="archive-header">
+      <div class="home-section-eyebrow reveal">Hall I</div>
+      <h1 class="archive-title reveal">Story Archive</h1>
+      <p class="archive-subtitle reveal">七个女孩,七段友谊。每一个页面都是一个情感的切片——安静地陈列在这里。</p>
+    </div>
+    <div id="archive-grid" class="archive-grid">
+      <!-- Story cards rendered by JS -->
+    </div>
+  </div>
+
+  <!-- ===== Story Detail Page ===== -->
+  <div id="page-story" class="page">
+    <div class="story-detail">
+      <div class="story-detail-back" onclick="App.navigate('archive')">
+        <span class="back-line"></span>
+        Back to Archive
+      </div>
+      <div id="story-detail-content" class="story-detail-content">
+        <!-- Story detail rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Friendship Atlas Page ===== -->
+  <div id="page-atlas" class="page">
+    <div class="atlas-header">
+      <div class="home-section-eyebrow reveal">Hall II</div>
+      <h1 class="atlas-title reveal">Friendship Atlas</h1>
+      <p class="atlas-subtitle reveal">点击地图上的国家或标记,遇见那片土地上的女孩。随着采访扩展到更多国家,这张地图会形成一张友谊的网络。</p>
+    </div>
+    <div class="atlas-container">
+      <div class="atlas-map-wrapper reveal">
+        <div id="atlas-map-container" class="atlas-map">
+          <!-- SVG map injected by JS -->
+        </div>
+        <div class="atlas-legend">
+          <div class="legend-item">
+            <span class="legend-swatch has"></span>
+            <span>有故事的国家</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch empty"></span>
+            <span>等待被发现</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="atlas-layout">
+        <div class="atlas-panel" id="atlas-panel">
+          <div class="atlas-panel-empty">
+            <div class="empty-icon">✦</div>
+            <p class="empty-text">点击地图上亮起的国家,或直接点击标记,查看那个地方的女孩故事。</p>
+          </div>
+        </div>
+        <div>
+          <div class="atlas-panel" style="min-height: auto;">
+            <div class="atlas-panel-header">
+              <div class="atlas-panel-country" style="font-size: 1.1rem;">采访进度</div>
+            </div>
+            <div class="atlas-progress">
+              <p class="atlas-progress-text">"采访100个国家的100个女孩"</p>
+              <div class="atlas-progress-bar">
+                <div class="atlas-progress-fill" id="atlas-progress-fill" style="width: 2%;"></div>
+              </div>
+              <p class="atlas-progress-numbers" id="atlas-progress-numbers">2 / 100 countries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-brand">Girlie Project</div>
+    <p class="footer-tagline">研究、记录并守护全球女性友谊</p>
+    <p class="footer-meta">Digital Friendship Museum · 2026</p>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script src="data/stories.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
