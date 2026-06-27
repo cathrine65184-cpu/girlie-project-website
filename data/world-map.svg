@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Simplified world map for Friendship Atlas.
+  Countries with stories are individually pathed; the rest are represented
+  as a single faint landmass background for atmosphere.
+  Projection: approximate equirectangular, viewBox 0 0 1000 500.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" data-name="world-map">
+  <!-- Ocean / background -->
+  <rect width="1000" height="500" fill="none"/>
+
+  <!-- Faint world landmass silhouette (atmospheric, non-interactive) -->
+  <g id="world-silhouette" opacity="0.35">
+    <!-- North America -->
+    <path d="M 80,100 Q 70,80 90,70 L 120,60 L 160,55 L 200,65 L 240,80 L 260,110 L 255,140 L 240,160 L 220,180 L 200,190 L 180,195 L 160,200 L 140,210 L 120,215 L 100,210 L 85,195 L 75,170 L 72,140 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Central America -->
+    <path d="M 200,200 L 210,210 L 220,220 L 215,235 L 205,240 L 195,235 L 190,220 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- South America -->
+    <path d="M 230,250 L 250,245 L 275,260 L 290,290 L 285,320 L 270,350 L 255,375 L 240,390 L 225,380 L 215,355 L 210,325 L 215,295 L 222,270 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Europe -->
+    <path d="M 470,95 L 490,85 L 520,80 L 540,85 L 555,95 L 560,110 L 555,125 L 545,135 L 530,140 L 510,142 L 490,138 L 475,130 L 465,115 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Africa -->
+    <path d="M 490,160 L 510,150 L 530,145 L 545,155 L 555,175 L 560,200 L 555,225 L 545,250 L 530,275 L 515,295 L 500,310 L 485,305 L 475,290 L 470,270 L 468,245 L 472,220 L 478,195 L 485,175 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Russia / Northern Asia -->
+    <path d="M 555,80 L 580,70 L 620,65 L 660,62 L 700,60 L 740,62 L 780,68 L 810,78 L 830,90 L 835,105 L 825,115 L 800,118 L 770,115 L 740,110 L 710,108 L 680,110 L 650,108 L 620,102 L 590,95 L 565,90 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Central / South Asia (non-China) -->
+    <path d="M 640,130 L 670,125 L 700,130 L 720,140 L 730,155 L 725,170 L 710,180 L 690,185 L 670,180 L 650,175 L 635,165 L 630,150 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Southeast Asia (non-Malaysia) -->
+    <path d="M 720,190 L 740,195 L 755,205 L 760,220 L 750,235 L 735,240 L 720,235 L 710,220 L 712,205 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Japan -->
+    <path d="M 845,120 L 855,115 L 862,125 L 858,140 L 850,145 L 842,135 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Korea -->
+    <path d="M 815,120 L 825,118 L 830,128 L 827,138 L 818,140 L 812,130 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Australia -->
+    <path d="M 780,310 L 810,300 L 840,305 L 865,315 L 875,330 L 870,350 L 850,365 L 820,370 L 790,365 L 770,350 L 765,330 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Indonesia archipelago (non-Malaysia) -->
+    <path d="M 745,260 L 770,258 L 795,262 L 815,265 L 810,272 L 785,275 L 760,272 L 742,268 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- Philippines -->
+    <path d="M 790,200 L 798,195 L 805,205 L 802,220 L 795,225 L 788,215 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+    <!-- UK -->
+    <path d="M 455,90 L 465,85 L 470,95 L 467,105 L 458,108 L 452,98 Z" fill="#e8e2da" stroke="#d9d2c9" stroke-width="0.5"/>
+  </g>
+
+  <!-- China (interactive — has stories) -->
+  <path
+    id="country-CN"
+    class="map-country has-stories"
+    data-country="CN"
+    data-country-name="中国"
+    d="M 680,120 L 710,110 L 745,108 L 775,112 L 800,120 L 815,135 L 818,155 L 810,175 L 795,185 L 775,190 L 755,195 L 735,198 L 715,195 L 700,188 L 688,175 L 678,160 L 673,145 L 675,130 Z"
+  />
+
+  <!-- Malaysia (interactive — has stories) -->
+  <path
+    id="country-MY"
+    class="map-country has-stories"
+    data-country="MY"
+    data-country-name="马来西亚"
+    d="M 728,245 L 745,242 L 762,248 L 768,255 L 762,262 L 748,265 L 735,263 L 728,255 Z"
+  />
+
+  <!-- Story markers (positioned by lat/lng projection) -->
+  <!-- Projection: x = (lng + 180) * (1000/360), y = (90 - lat) * (500/180) -->
+  <!-- Nanjing: lat 32.06, lng 118.80 -> x=830, y=161 -->
+  <!-- Zhengzhou: lat 34.75, lng 113.63 -> x=817, y=153 -->
+  <!-- Tianjin: lat 39.34, lng 117.36 -> x=826, y=141 -->
+  <!-- Beijing: lat 39.90, lng 116.41 -> x=823, y=139 -->
+  <!-- Shanghai: lat 31.23, lng 121.47 -> x=837, y=163 -->
+  <!-- Kuala Lumpur: lat 3.14, lng 101.69 -> x=782, y=241 -->
+
+  <g id="map-markers">
+    <!-- Nanjing (girl-01, girl-07) -->
+    <g class="map-marker" data-story="girl-01-nanjing" data-lat="32.06" data-lng="118.80" transform="translate(830, 161)">
+      <circle class="marker-pulse" r="5"/>
+      <circle r="5"/>
+    </g>
+    <!-- Zhengzhou (girl-02) -->
+    <g class="map-marker" data-story="girl-02-zhengzhou" data-lat="34.75" data-lng="113.63" transform="translate(817, 153)">
+      <circle class="marker-pulse" r="5"/>
+      <circle r="5"/>
+    </g>
+    <!-- Tianjin (girl-03) -->
+    <g class="map-marker" data-story="girl-03-tianjin" data-lat="39.34" data-lng="117.36" transform="translate(826, 141)">
+      <circle class="marker-pulse" r="5"/>
+      <circle r="5"/>
+    </g>
+    <!-- Beijing (girl-04) -->
+    <g class="map-marker" data-story="girl-04-beijing" data-lat="39.90" data-lng="116.41" transform="translate(823, 139)">
+      <circle class="marker-pulse" r="5"/>
+      <circle r="5"/>
+    </g>
+    <!-- Shanghai (girl-05) -->
+    <g class="map-marker" data-story="girl-05-shanghai" data-lat="31.23" data-lng="121.47" transform="translate(837, 163)">
+      <circle class="marker-pulse" r="5"/>
+      <circle r="5"/>
+    </g>
+    <!-- Kuala Lumpur (girl-06) -->
+    <g class="map-marker" data-story="girl-06-malaysia" data-lat="3.14" data-lng="101.69" transform="translate(782, 241)">
+      <circle class="marker-pulse" r="5"/>
+      <circle r="5"/>
+    </g>
+  </g>
+</svg>
